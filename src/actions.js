@@ -1,0 +1,4 @@
+export const HANDLE_PAGE = "HANDLE_PAGE";
+export const HANDLE_SEARCH = "HANDLE_SEARCH";
+export const SET_STORIES = "SET_STORIES";
+export const HANDLE_DELETE = "HANDLE_DELETE";

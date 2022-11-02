@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-mainBack: #f1f5f8;
+  --clr-mainBack2: #f8f9fa;
+  --clr-darkmode1: #181818;
+  --clr-darkmode2: #282c35;
+  --clr-gold: #c59d5f;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  
+  /*light mode*/
+  --clr-bg: #f1f5f8;
+  --clr-bg-cont: #fff;
+  --clr-fontC: #222;
+  --clr-titleC: hsl(209, 61%, 16%);
+  --clr-fontStory: hsl(210, 22%, 49%);
+  --clr-linkStory: hsl(205, 78%, 60%);
+  --clr-redLD: hsl(360, 67%, 44%);
+  --clr-redLD-hover: hsl(360, 71%, 66%);
+  --clr-btnPrimHover: hsl(205, 63%, 48%);
+}
+.dark-mode {
+  --clr-bg: #181818;
+  --clr-bg-cont: #343a40;
+  --clr-fontC: #fff;
+  --clr-titleC: hsl(205, 89%, 70%);
+  --clr-fontStory: #fff;
+  --clr-linkStory: hsl(205, 89%, 70%);
+  --clr-redLD: hsl(360, 71%, 66%);
+  --clr-redLD-hover: hsl(360, 67%, 44%);
+  --clr-btnPrimHover: hsl(205, 89%, 70%);
+}
+
+/**/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  background-color: var(--clr-bg);
+  transition: all .1s linear;
+}
+
+.titleC {
+  color: var(--clr-titleC);
+}
+.fontC {
+  color: var(--clr-fontC);
+}
+
+/*form*/
+.search {
+  max-width: 500px;
+}
+.search input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 5px;
+  border-bottom: 3px solid var(--clr-grey-8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: var(--clr-fontC);
+  transition: all .1s linear;
+}
+.search input:focus {
+    border-bottom-color: transparent;
+    background-color: #fff;
+    color: #222;
+}
+
+/*buttons*/
+.btn {
+	padding: 4px 8px;
+	font-size: 14px;
+}
+.btn-prim {
+  color: #fff;
+  background-color: var(--clr-primary-5);
+}
+.btn-prim:hover {
+  background-color: var(--clr-btnPrimHover);
+}
+.page-buttons button:disabled {
+  cursor: not-allowed;
+}
+
+/*stories*/
+.story {
+  flex-basis: 48.5%;
+  background-color: var(--clr-bg-cont);
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  padding: 12px 18px;
+  margin-bottom: 34px;
+  transition: all .1s linear;
+}
+.story p {
+  color: var(--clr-fontStory);
+  font-size: 15px;
+  margin: 8px 0;
+}
+.links a {
+  color: var(--clr-linkStory);
+  transition: all .1s linear;
+  font-size: 15px;
+  padding: 3px 0;
+  margin-right: 6px;
+}
+.links a:hover {
+  color: var(--clr-btnPrimHover);
+}
+.links button {
+  color: var(--clr-redLD);
+  transition: all .1s linear;
+}
+.links button:hover {
+  color: var(--clr-redLD-hover);
+}
+
+@media (min-width: 992px){
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+}
+@media (max-width: 575px){
+	.containerBoot {
+		width: 90%;
+	}
+  .story {
+    flex-basis: 100%;
+    margin-bottom: 16px;
+  }
+}
